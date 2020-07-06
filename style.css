@@ -5,25 +5,25 @@ body{
   background-color: #2F37A4;
   /* max-height: 11vw; */
   height: 8vw;
-  min-height: 90px
+  min-height: 70px
 }
 .logoCtae{
   float : left;
   height: 8vw;
   width: 8vw;
-  min-height: 90px;
-  min-width: 90px;
+  min-height: 70px;
+  min-width: 70px;
 }
 .logoCore{
   float: right;
   height: 8vw;
   width: 8vw;
-  min-width: 90px;
-  min-height: 90px;
+  min-width: 70px;
+  min-height: 70px;
 }
 .college{
   text-align: center;
-  font-size: 2.5vw;
+  font-size: 1.7vw;
   /* font-weight: bold; */
   /* text-decoration-line: underline; */
   color: white;
@@ -31,11 +31,11 @@ body{
 }
 .university{
   text-align: center;
-  font-size: 15px;
+  font-size: 2.5vw;
   color: white;
 }
 .club{
-  font-size: 20px;
+  font-size: 10;
   color: #F67720;
   text-align: center;
 }
