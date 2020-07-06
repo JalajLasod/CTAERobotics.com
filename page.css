@@ -1,0 +1,102 @@
+body{
+  margin: 0;
+}
+.header{
+  background-color: #2F37A4;
+  /* max-height: 11vw; */
+  height: 8vw;
+}
+.logoCtae{
+  float : left;
+  height: 8vw;
+  width: 8vw;
+}
+.logoCore{
+  float: right;
+  height: 8vw;
+  width: 8vw;
+}
+.college{
+  text-align: center;
+  font-size: 2.5vw;
+  /* font-weight: bold; */
+  /* text-decoration-line: underline; */
+  color: white;
+  /* font-size-adjust: 50px; */
+}
+.university{
+  text-align: center;
+  font-size: 1.5vw;
+  color: white;
+}
+.club{
+  font-size: 1.5vw;
+  color: #F67720;
+  text-align: center;
+}
+#navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #282D6F;
+}
+
+#navbar li {
+  float: right;
+}
+
+#navbar li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
+}
+
+#navbar li a:hover {
+  background-color: #1B1F59;
+}
+#navbar{
+  display:inline;
+}
+.carousel{
+  float: center;
+  /* background: grey; */
+}
+.carousel-item img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 40vw;
+  width: 100vw
+}
+.carousel-indicators{
+  background-color: inherit;
+}
+.matter{
+  margin: 5vw;
+}
+.article img{
+  float: left;
+  height: 10vw;
+  width: 10vw;
+  margin: 1vw;
+  border: solid 2px;
+}
+.event{
+  float: right;
+  width: 25%;
+  border: solid;
+  text-decoration: none;
+}
+.event ul{
+  display: block;
+  list-style-type: none;
+}
+.footer{
+  color: white;
+  background-color: grey;
+  height: 20vw;
+  text-align: center;
+}
