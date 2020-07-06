@@ -3,20 +3,24 @@
   <head>
     <meta charset="utf-8">
     <title></title>
-    <link rel="stylesheet" href="page.css">
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet"
     href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <script src="lib/angular.min.js"></script>
+    <script src="lib/angular-ui-router.min.js"></script>
+    <script src="app.js"></script>
+    <script src="routes.js"></script>
   </head>
-  <body>
+  <body ng-app="App">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <div class="header">
       <div class="logoCtae">
-        <img class="logoCtae" src="src/College_of_Technology_&_Engineering,_Udaipur.png" height="100" width="100" alt="">
+        <img class="logoCtae" src="src/images/College_of_Technology_&_Engineering,_Udaipur.png" height="100" width="100" alt="">
       </div>
       <div class="logoCore">
-        <img class="logoCore" src="src/pp.jpg" height="100" width="100" alt="">
+        <img class="logoCore" src="src/images/pp.jpg" height="100" width="100" alt="">
       </div>
       <div class="heading">
          <div class="college">
@@ -33,62 +37,13 @@
 
     <div class="collapse navbar-collapse" id="navbar">
       <ul>
-        <li><a href="#home">About</a></li>
-        <li><a href="#contact">Contact</a></li>
-        <li><a href="#news">Coordinators</a></li>
-        <li><a href="#about">Home</a></li>
+        <li><a ui-sref="about">About</a></li>
+        <li><a ui-sref="contact">Contact</a></li>
+        <li><a ui-sref="coordinators">Coordinators</a></li>
+        <li><a ui-sref="home">Home</a></li>
       </ul>
     </div>
-
-    <div id="demo" class="carousel slide" data-ride="carousel">
-
-      <!-- Indicators -->
-      <ul class="carousel-indicators">
-        <li data-target="#demo" data-slide-to="0" class="active"></li>
-        <li data-target="#demo" data-slide-to="1"></li>
-        <li data-target="#demo" data-slide-to="2"></li>
-      </ul>
-
-      <!-- The slideshow -->
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img src="src/robotics1.jpg" alt="" >
-        </div>
-        <div class="carousel-item">
-          <img src="src/robotics2.jpg" alt="" >
-        </div>
-        <div class="carousel-item">
-          <img src="src/robotics3.jpg" alt="">
-        </div>
-      </div>
-
-      <!-- Left and right controls -->
-      <a class="carousel-control-prev" href="#demo" data-slide="prev">
-        <span class="carousel-control-prev-icon"></span>
-      </a>
-      <a class="carousel-control-next" href="#demo" data-slide="next">
-        <span class="carousel-control-next-icon"></span>
-      </a>
-    </div>
-    <div class="matter">
-      <div class="event">
-        <ul>
-          <li>blah</li>
-          <li>blah</li>
-          <li>blah</li>
-          <li>blah</li>
-        </ul>
-      </div>
-      <div class="article">
-        <h2>WELCOME TO CLUB OF ROBOT ELECTRONICS</h2>
-        <img src="src/Dean Sir A_K_Sharma.jpg" alt="">
-        <p>The College of Technology and Engineering, Udaipur (CTAE) is a constituent college of the Maharana Pratap University of Agriculture and Technology, Udaipur. The college was started in 1964 with a Graduate Programme in Agricultural Engineering. Presently the CTAE has undergraduate degree programmes in 8 branches, M.Tech. programmes in 12 disciplines, besides an MBA programme in Engineering and PhD programmes in 9 disciplines. It is situated at about 7 km from Udaipur city railway station and bus terminal and 2 km from Rana Pratap Nagar railway station.
-        </p>
-        <p>The college has a rich infrastructure with well-equipped laboratories in each department having modern state-of-art instruments/equipment to provide the hands-on training to the students. Besides laboratories, the college central workshop in the department of Mechanical Engineering is well equipped with modern machines, tools and other facilities to impart training to the students and help in project work. Other departments such as Farm Machinery and Power Engineering, Renewable Energy Engineering and Post-Harvest Technology have their own workshops to handle R & D projects
-        </p>
-      </div>
-    </div>
-
+    <ui-view></ui-view>
     <div class="footer">
       <h3>Contacts:</h3>
       <pre>
