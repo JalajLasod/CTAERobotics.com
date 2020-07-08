@@ -12,8 +12,10 @@
     <script src="lib/angular-ui-router.min.js"></script>
     <script src="app.js"></script>
     <script src="routes.js"></script>
+    <script src="src/home.controller.js"></script>
+    <script src="src/common.controller.js"></script>
   </head>
-  <body ng-app="App">
+  <body ng-app="App" ng-controller='cCtrl as ctrl'>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <div class="header">
       <div class="logoCtae">
@@ -34,8 +36,24 @@
          </div>
       </div>
     </div>
+    <nav id="header-nav" class="navbar navbar-default">
 
-    <div class="collapse navbar-collapse" id="navbar">
+      <div class="container">
+        <button id="navbarToggle" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded='false'>
+          MENU
+        </button>
+      </div>
+
+    <div id="collapsable-nav" class="collapse navbar-collapse">
+      <ul id="nav-list">
+        <li><a ui-sref="about">About</a></li>
+        <li><a ui-sref="contact">Contact</a></li>
+        <li><a ui-sref="coordinators">Coordinators</a></li>
+        <li><a ui-sref="home">Home</a></li>
+      </ul>
+    </div>
+
+    <div id="nav" class="nav">
       <ul>
         <li><a ui-sref="about">About</a></li>
         <li><a ui-sref="contact">Contact</a></li>
@@ -43,6 +61,8 @@
         <li><a ui-sref="home">Home</a></li>
       </ul>
     </div>
+    </nav>
+
     <ui-view></ui-view>
     <div class="footer">
       <h3>Contacts:</h3>

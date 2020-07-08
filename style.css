@@ -39,38 +39,55 @@ body{
   color: #F67720;
   text-align: center;
 }
-#navbar ul {
+.container button{
+  display: none;
+  /* border: solid 2px; */
+  clear: both;
+}
+.container button a:hover{
+  background-color: #1B1F59;
+}
+#header-nav{
+  margin: 0;
+  padding: 0;
+  background-color: #282D6F;
+}
+/* #collapsable-nav{
+  display: block;
+} */
+#nav ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
   background-color: #282D6F;
 }
-
-#navbar li {
+#nav li {
   float: right;
-  font-size: 15px;
-
-  height: 45px;
+  font-size: 2vw;
 }
 
-#navbar li a {
+#nav li a {
   display: block;
   color: white;
   text-align: center;
-  padding: 1vw;
+  padding: 1.2vw;
   text-decoration: none;
 }
-
-#navbar li a:hover {
+#collapsable-nav li{
+  list-style-type: none;
+  padding: 1vw;
+}
+#collapsable-nav li a{
+  display: block;
+  color: white;
+}
+#nav li a:hover {
   background-color: #1B1F59;
 }
-#navbar{
-  display:inline;
-}
-.carousel{
-  float: center;
-  /* background: grey; */
+
+#nav{
+  background-color: #282D6F;
 }
 .carousel-item img{
   display: block;
@@ -107,4 +124,26 @@ body{
   margin: none;
   background-color: grey;
   text-align: center;
+}
+
+
+
+@media (max-width:767px) {
+  #nav{
+    display: none;
+  }
+  .container button{
+    display:block;
+    background-color: #282D6F;
+    border: none;
+    margin: 0;
+    padding: 4px;
+    color: white;
+  }
+  .container button:hover{
+    background-color: #1B1F59;
+  }
+  #collapsable-nav li{
+    vertical-align: middle;
+  }
 }
