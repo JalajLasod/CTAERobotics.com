@@ -47,6 +47,9 @@ body{
 .container button a:hover{
   background-color: #1B1F59;
 }
+#header-nav .container {
+  margin: 0;
+}
 #header-nav{
   margin: 0;
   padding: 0;
@@ -82,6 +85,10 @@ body{
   display: block;
   color: white;
 }
+#collapsable-nav li a:hover{
+  background-color: #1B1F59;
+  text-decoration: none;
+}
 #nav li a:hover {
   background-color: #1B1F59;
 }
@@ -110,20 +117,44 @@ body{
   border: solid 2px;
 }
 .event{
-  float: right;
-  width: 25%;
-  border: solid;
+  /* float: right; */
+  /* width: 40%; */
+  /* border: solid; */
   text-decoration: none;
+}
+.event table{
+  margin: auto;
+}
+.event table tr td,.event table tr th{
+  border: 1px solid;
+  text-align: center;
+  padding: 4px;
+}
+table tr td img{
+  width: 23vw;
+}
+iframe{
+  width: 60vw;
+  height: 40vw;
+}
+.Coordinators{
+  margin: 20px;
 }
 .event ul{
   display: block;
-  list-style-type: none;
+}
+.title{
+  font-size:3vw;
+  text-align: center;
 }
 .footer{
   color: white;
   margin: none;
   background-color: grey;
   text-align: center;
+}
+.footer p{
+  margin: 0;
 }
 
 
@@ -134,6 +165,7 @@ body{
   }
   .container button{
     display:block;
+    float: left;
     background-color: #282D6F;
     border: none;
     margin: 0;
@@ -145,5 +177,9 @@ body{
   }
   #collapsable-nav li{
     vertical-align: middle;
+  }
+  .event{
+    width: auto;
+    float: none;
   }
 }
